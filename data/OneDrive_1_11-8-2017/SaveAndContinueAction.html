@@ -1,0 +1,1640 @@
+<html><head>
+<META http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+/* Default heading font (outside of tables) */
+body { font-family: sans-serif; font-size: 11pt; }
+
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+/* File Difference Report styles - Color */
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+
+tr.secBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.secMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.secEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.secAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.secSubEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.secSubAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.secGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+
+td.LineNum { text-align: right; }
+td.LineRange { font-family: sans-serif; }
+td.SubLineRange { font-family: sans-serif; border-bottom: none; }
+
+td.AlignLeft { text-align: left; }
+td.AlignRight { text-align: right; }
+td.AlignCenter { text-align: center; }
+td.Caption { text-align: left; background-color: #E7E7E7; padding-top: 8px; }
+
+td.Normal { }
+td.HasSimilar { background-color: #F0F0FF; }
+td.HasMismatch { background-color: #FFF0F0; }
+td.HasOrphan { background-color: #FFF0F0; }
+td.Added { background-color: #FFF0F0; }
+td.Deleted { background-color: #FFF0F0; text-decoration: line-through; }
+td.UAdded { background-color: #F0F0FF; }
+td.UDeleted { background-color: #F0F0FF; text-decoration: line-through; }
+
+.ttSigDiff { color: #FF0000; }
+.ttInsigDiff { color: #0000FF; }
+.ttAdded { color: #FF0000; }
+.ttDeleted { text-decoration: line-through; }
+
+/* Directory Comparison Report styles - Color */
+table.dc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: sans-serif; font-size: 10pt; }
+
+table.dc tr.secBegin td { border-bottom: 1px solid Silver; }
+table.dc tr.secMiddle td { border-bottom: 1px solid Silver; }
+
+.ttNewer { color: #FF0000; }
+.ttOlder { color: #808080; }
+.ttOrphan { color: #0000FF; }
+.ttGhosted { color: #008080; }
+</style>
+</head><body>
+FILE COMPARISON<br />
+Produced: 11/2/2017 2:28:37 PM<br />
+&nbsp; &nbsp;
+<br />
+Mode:&nbsp; Differences with Context &nbsp;
+<br />
+&nbsp; &nbsp;
+<br />
+Left file: D:\pawan\svn\Delta_17.1\PWF\HWNG-Client\hw-client\src\main\java\com\sdm\hw\client\rx\dataentry\action\SaveAndContinueAction.java.working&nbsp;&nbsp;&nbsp;&nbsp; Right file: D:\pawan\svn\Delta_17.1\PWF\HWNG-Client\hw-client\src\main\java\com\sdm\hw\client\rx\dataentry\action\SaveAndContinueAction.java.merge-right.r59352 &nbsp;
+<br />
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="secBegin">
+<td class="LineNum">17</td>
+<td class="Normal">import org.eclipse.swt.widgets.Display;</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">17</td>
+<td class="Normal">import org.eclipse.swt.widgets.Display;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">18</td>
+<td class="Normal">import org.eclipse.swt.widgets.Event;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">18</td>
+<td class="Normal">import org.eclipse.swt.widgets.Event;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">19</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">19</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">20</td>
+<td class="Normal">import com.sdm.hw.client.HwApplicationWindow;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">20</td>
+<td class="Normal">import com.sdm.hw.client.HwApplicationWindow;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">21</td>
+<td class="Normal">import com.sdm.hw.client.action.HwAction;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">21</td>
+<td class="Normal">import com.sdm.hw.client.action.HwAction;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">22</td>
+<td class="Normal">import com.sdm.hw.client.common.ActionManager;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">22</td>
+<td class="Normal">import com.sdm.hw.client.common.ActionManager;</td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">23</td>
+<td class="HasOrphan"><span class="ttSigDiff">import com.sdm.hw.client.common.NoteDisplayHelper;</span></td>
+<td class="AlignCenter">+-</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">24</td>
+<td class="Normal">import com.sdm.hw.client.core.Application;</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">23</td>
+<td class="Normal">import com.sdm.hw.client.core.Application;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">25</td>
+<td class="Normal">import com.sdm.hw.client.rx.RxCommonVariables;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">24</td>
+<td class="Normal">import com.sdm.hw.client.rx.RxCommonVariables;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">26</td>
+<td class="Normal">import com.sdm.hw.client.rx.constants.RxConstant;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">25</td>
+<td class="Normal">import com.sdm.hw.client.rx.constants.RxConstant;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">27</td>
+<td class="Normal">import com.sdm.hw.client.rx.dataentry.DataEntryModule;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">26</td>
+<td class="Normal">import com.sdm.hw.client.rx.dataentry.DataEntryModule;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">28</td>
+<td class="Normal">import com.sdm.hw.client.rx.dataentry.DataEntryModuleContext;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">27</td>
+<td class="Normal">import com.sdm.hw.client.rx.dataentry.DataEntryModuleContext;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">29</td>
+<td class="Normal">import com.sdm.hw.client.rx.dataentry.DataEntryModuleView;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">28</td>
+<td class="Normal">import com.sdm.hw.client.rx.dataentry.DataEntryModuleView;</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">57</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /** The Constant LOGGER. */</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">56</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /** The Constant LOGGER. */</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">58</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; public static final HwLogger LOGGER = LogManager</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">57</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; public static final HwLogger LOGGER = LogManager</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">59</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getLogger(SaveAndContinueAction.class);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">58</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getLogger(SaveAndContinueAction.class);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">60</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; private boolean isMethadoneCarriesExists;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">59</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; private boolean isMethadoneCarriesExists;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">61</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; long noOfCarries=0;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">60</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; long noOfCarries=0;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">62</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; boolean isAnyValueChanged;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">61</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; boolean isAnyValueChanged;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">63</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp; // CI # 2 defect # 5539 dated 05/31/2016 fixed by TCS start</span></td>
+<td class="AlignCenter">+-</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">64</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp; private boolean isDrugChanged;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">65</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp; // CI # 2 defect # 5539 dated 05/31/2016 fixed by TCS end</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">66</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public SaveAndContinueAction(boolean valuesChanged)</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">62</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public SaveAndContinueAction(boolean valuesChanged)</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">67</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">63</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">68</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; super(ID);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">64</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; super(ID);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">69</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; isAnyValueChanged=valuesChanged;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">65</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; isAnyValueChanged=valuesChanged;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">70</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">66</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">71</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">67</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">95</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getDefaultViewManager();*/</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">91</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getDefaultViewManager();*/</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">96</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">92</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">97</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*Map&lt;?, ?&gt; moduleMap = manager.getModuleViews();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">93</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*Map&lt;?, ?&gt; moduleMap = manager.getModuleViews();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">98</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; moduleMap.remove(&quot;Rx&quot;);*/</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">94</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; moduleMap.remove(&quot;Rx&quot;);*/</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">99</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataEntryModuleContext dataEntryModuleContext= (DataEntryModuleContext) Application.getInstance().getModuleManager().findAlreadyExistingModuleContext(DataEntryModule.ID);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">95</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataEntryModuleContext dataEntryModuleContext= (DataEntryModuleContext) Application.getInstance().getModuleManager().findAlreadyExistingModuleContext(DataEntryModule.ID);</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">100</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TxRecord txRecord=(TxRecord) dataEntryModuleContext.getModel();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">96</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TxRecord txRecord=(TxRecord) dataEntryModuleContext.getModel();</td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">101</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+<td class="AlignCenter">+-</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">102</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start Defect ID '5250' Date '27-11-2014' Code fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">97</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start Defect ID '5250' Date '27-11-2014' Code fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">103</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">98</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">104</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start CR, for Written Date, Dated 01st March, 2015 fix by &quot;TCS&quot; &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">99</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start CR, for Written Date, Dated 01st March, 2015 fix by &quot;TCS&quot; &gt;&gt;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">105</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Display.getDefault().getFocusControl().notifyListeners(SWT.FocusOut, new Event());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">100</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Display.getDefault().getFocusControl().notifyListeners(SWT.FocusOut, new Event());</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">106</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataEntryModuleView deView = (DataEntryModuleView) Application</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">101</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataEntryModuleView deView = (DataEntryModuleView) Application</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">107</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getInstance()</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">102</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getInstance()</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">146</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">141</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">147</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">142</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">148</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect ID '5250' Date '27-11-2014' Code fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">143</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect ID '5250' Date '27-11-2014' Code fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">149</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataEntryModule dataEntryModule=(DataEntryModule) Application.getInstance().getCurrentModule();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">144</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataEntryModule dataEntryModule=(DataEntryModule) Application.getInstance().getCurrentModule();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">150</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; changeItemContextSeed=dataEntryModule.getRxintakeChangeItemContextSeed();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">145</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; changeItemContextSeed=dataEntryModule.getRxintakeChangeItemContextSeed();</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">151</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">146</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">152</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Delta 2 Defect# 15154 Date '20-09-2016' Fix by 'TCS' Start</span></td>
+<td class="AlignCenter">+-</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">153</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null != txRecord &amp;&amp; null != txRecord.getNotesList()){</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">154</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; NoteDisplayHelper noteDisplayHelper = new NoteDisplayHelper(RxIntakeModule.ID, txRecord.getNotesList());</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">155</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; txRecord.setNotesList(noteDisplayHelper.removeNotesOtherThanTxAndRx(txRecord.getNotesList()));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">156</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">157</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Delta 2 Defect# 15154 Date '20-09-2016' Fix by 'TCS' Start</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">158</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*Application.getInstance().getModuleManager()</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">147</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*Application.getInstance().getModuleManager()</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">159</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .removeCurrentModuleContext();*/</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">148</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .removeCurrentModuleContext();*/</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">160</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ctabFolder.getSelection().dispose();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">149</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ctabFolder.getSelection().dispose();</td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">161</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+<td class="AlignCenter">+-</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">162</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">150</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">163</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Added by Vishwajeet to set Selection on RxIntakeTab after save and continue has been selected or clicked</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">151</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // Added by Vishwajeet to set Selection on RxIntakeTab after save and continue has been selected or clicked</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">164</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HwApplicationWindow.getInstance().showAlreadyExistingModule(RxIntakeModule.ID);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">152</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; HwApplicationWindow.getInstance().showAlreadyExistingModule(RxIntakeModule.ID);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">165</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">153</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">166</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (Application.getInstance().getModuleManager()</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">154</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (Application.getInstance().getModuleManager()</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">167</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getCurrentModuleContext() instanceof RxIntakeModuleContext) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">155</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getCurrentModuleContext() instanceof RxIntakeModuleContext) {</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">179</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WorkItemData workItemData = (WorkItemData) workItem.getBean();</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">167</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WorkItemData workItemData = (WorkItemData) workItem.getBean();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">180</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //START : Defect #4284 , Dated 27-10-2014</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">168</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //START : Defect #4284 , Dated 27-10-2014</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">181</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start Defect ID '5081' Date '20-12-2014' Code fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">169</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start Defect ID '5081' Date '20-12-2014' Code fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">182</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActionManager actionManager = (ActionManager) ImplementationRegistrar.getInstance(ActionManager.class);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">170</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ActionManager actionManager = (ActionManager) ImplementationRegistrar.getInstance(ActionManager.class);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">183</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SendToFullOwingAction sendToFullOwingAction = (SendToFullOwingAction) actionManager.getHwAction(SendToFullOwingAction.ID);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">171</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SendToFullOwingAction sendToFullOwingAction = (SendToFullOwingAction) actionManager.getHwAction(SendToFullOwingAction.ID);</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">184</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // defect # 7865 11/02/16 fixed by tcs start</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">172</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // defect # 7865 11/02/16 fixed by tcs start</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">185</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">173</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ttSigDiff">//if(sendToFullOwingAction.hasBeenSet)</span></td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">186</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(sendToFullOwingAction.hasBeenSet &amp;&amp; <span class="ttSigDiff">null!=workItemData.getRxNumber() &amp;&amp; </span>(txRecord.getRx().getRxNumber() == workItemData.getRxNumber<span class="ttSigDiff">().intValue</span>()))</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">174</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(sendToFullOwingAction.hasBeenSet &amp;&amp; (txRecord.getRx().getRxNumber() == workItemData.getRxNumber()))</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">187</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // defect # 7865 11/02/16 fixed by tcs end</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">175</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // defect # 7865 11/02/16 fixed by tcs end</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">188</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect ID '5081' Date '20-12-2014' Code fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">176</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect ID '5081' Date '20-12-2014' Code fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">189</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">177</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">190</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBu<span class="ttSigDiff">i</span><span class="ttSigDiff">ld</span>er warningMsgs = new StringBu<span class="ttSigDiff">i</span><span class="ttSigDiff">ld</span>er();<span class="ttSigDiff">//Sonar Fix S1149 on 15 Feb 17 by TCS</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">178</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBu<span class="ttSigDiff">ff</span>er warningMsgs = new StringBu<span class="ttSigDiff">ff</span>er();</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">191</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warningMsgs.append(workItemData.getWarning());</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">179</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warningMsgs.append(workItemData.getWarning());</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">192</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warningMsgs.append(RxConstant.SEND_TO_FULL_OWING + COMMA_STRING);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">180</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warningMsgs.append(RxConstant.SEND_TO_FULL_OWING + COMMA_STRING);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">193</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItemData.setWarning(warningMsgs.toString());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">181</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItemData.setWarning(warningMsgs.toString());</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">194</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sendToFullOwingAction.hasBeenSet = false;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">182</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sendToFullOwingAction.hasBeenSet = false;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">195</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">183</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">196</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //END : Defect #4284 , Dated 27-10-2014</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">184</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //END : Defect #4284 , Dated 27-10-2014</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">232</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rxIntakeModuleView.getBeanViewer().refresh();</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">220</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; rxIntakeModuleView.getBeanViewer().refresh();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">233</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">221</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">234</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">222</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">235</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect '3345' Date '26-08-2014' Code fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">223</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect '3345' Date '26-08-2014' Code fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">236</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">224</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">237</td>
+<td class="Normal">//Start&nbsp; Defect fix 14272 by tcs Date- 7/30/2016</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">225</td>
+<td class="Normal">//Start&nbsp; Defect fix 14272 by tcs Date- 7/30/2016</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">238</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">226</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">239</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">227</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">240</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">228</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">241</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">229</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">242</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TrackManager trackManager = Application.getInstance().getModuleManager().getDefaultTrackManager();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">230</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TrackManager trackManager = Application.getInstance().getModuleManager().getDefaultTrackManager();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">243</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; trackManager.getDefaultTracks().removeTrackForRxIntake(deView.getModuleTrack());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">231</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; trackManager.getDefaultTracks().removeTrackForRxIntake(deView.getModuleTrack());</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">244</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Application.getInstance().getModuleManager().closeModule(DataEntryModule.ID);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">232</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Application.getInstance().getModuleManager().closeModule(DataEntryModule.ID);</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">245</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">233</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">280</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&lt;&lt;Start ITSD Fixes 19-08-2015</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">268</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&lt;&lt;Start ITSD Fixes 19-08-2015</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">281</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null!=txRecord.getAuthorizedTxQty() &amp;&amp; 0==txRecord.getAuthorizedTxQty().intValue())</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">269</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null!=txRecord.getAuthorizedTxQty() &amp;&amp; 0==txRecord.getAuthorizedTxQty().intValue())</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">282</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">270</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">283</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&lt;&lt;End ITSD Fixes 19-08-2015</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">271</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //&lt;&lt;End ITSD Fixes 19-08-2015</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">284</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missingControlList.add(dataEntryModule.getCurrentModuleView().findControl(&quot;PrescrQty&quot;));</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">272</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missingControlList.add(dataEntryModule.getCurrentModuleView().findControl(&quot;PrescrQty&quot;));</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">285</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">273</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">286</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ttSigDiff">//&lt;Mod</span>if<span class="ttSigDiff">ied on</span><span class="ttSigDiff"> </span>0<span class="ttSigDiff">6-May</span><span class="ttSigDiff">-2016 t</span>o<span class="ttSigDiff"> fix </span>t<span class="ttSigDiff">he I</span>T<span class="ttSigDiff">SD NPE b</span>y<span class="ttSigDiff"> Sachin K</span>u<span class="ttSigDiff">mar&gt;</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">274</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if<span class="ttSigDiff">(</span>0<span class="ttSigDiff">==txRec</span>o<span class="ttSigDiff">rd.ge</span>tT<span class="ttSigDiff">xQuantit</span>y<span class="ttSigDiff">().intVal</span>u<span class="ttSigDiff">e())</span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">287</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //DIT Defect while testing Defect#24932 - When you take the Tx Qty less than 1 while refilling the Rx (i.e Refill Rx1 and from Rx Intake screen, open the Rx in Edit Mode and Change the Tx Qty to less than 1) and then click on SAVE and CONTINUE, Mandatory Field error message is being displayed. </span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">288</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null != txRecord.getTxQuantity() &amp;&amp; 0==BigDecimal.ZERO.compareTo(txRecord.getTxQuantity()))</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">289</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">275</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">290</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missingControlList.add(dataEntryModule.getCurrentModuleView().findControl(&quot;TxQty&quot;));</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">276</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missingControlList.add(dataEntryModule.getCurrentModuleView().findControl(&quot;TxQty&quot;));</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">291</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">277</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">292</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(0==txRecord.getDaysSupply())</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">278</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(0==txRecord.getDaysSupply())</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">293</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">279</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">294</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missingControlList.add(dataEntryModule.getCurrentModuleView().findControl(&quot;DaysSupply&quot;));</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">280</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; missingControlList.add(dataEntryModule.getCurrentModuleView().findControl(&quot;DaysSupply&quot;));</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">315</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &amp;&amp; null != workItem2.getChild(&quot;tx&quot;) &amp;&amp; null != txRecord</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">301</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &amp;&amp; null != workItem2.getChild(&quot;tx&quot;) &amp;&amp; null != txRecord</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">316</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &amp;&amp; /*workItem2.getTx().getId().equals(txRecord.getId())*/ workItem2.getTx().getRx().getId().equals(txRecord.getRx().getId())) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">302</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &amp;&amp; /*workItem2.getTx().getId().equals(txRecord.getId())*/ workItem2.getTx().getRx().getId().equals(txRecord.getRx().getId())) {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">317</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // End Defect 3338 23-01-2015 by tcs</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">303</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // End Defect 3338 23-01-2015 by tcs</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">318</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (null != txRecord.getDrugUpc()) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">304</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (null != txRecord.getDrugUpc()) {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">319</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2.setDrug(txRecord.getDrugUpc()</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">305</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2.setDrug(txRecord.getDrugUpc()</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">320</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getDrugSearchFullNameEn());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">306</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getDrugSearchFullNameEn());</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">321</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start Defect ID '23365' Date '27-02-2017' Code Fix by 'TCS' &gt;&gt;</span></td>
+<td class="AlignCenter">+-</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">322</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WorkItemData workItemData = (WorkItemData) workItem2.getBean();</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">323</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItemData.setDrug(txRecord.getDrugUpc()</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">324</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getDrugSearchFullNameEn());</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">325</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect ID '23365' Date '27-02-2017' Code Fix by 'TCS' &gt;&gt;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">326</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else if (null != txRecord.getCompound()) {</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">307</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else if (null != txRecord.getCompound()) {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">327</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2.setDrug(txRecord.getCompound().getNameEn());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">308</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2.setDrug(txRecord.getCompound().getNameEn());</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">328</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">309</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">329</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">310</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">330</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //DEFECT 5242- 21-11-2014 BY TCS</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">311</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //DEFECT 5242- 21-11-2014 BY TCS</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">331</td>
+<td class="Normal">// END FIX 3338 BY TCS 27-10-2014</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">312</td>
+<td class="Normal">// END FIX 3338 BY TCS 27-10-2014</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">332</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Added for Methadone functionality</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">313</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Added for Methadone functionality</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">333</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt;Start Sonar Fixes : Date '26-08-2015' Code fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">314</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt;Start Sonar Fixes : Date '26-08-2015' Code fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">334</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(RxCommonVariables.getInstance().getOpioidFlag() &amp;&amp; null!=workItem2 &amp;&amp; null!=workItem2.getLineItemId() &amp;&amp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">315</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(RxCommonVariables.getInstance().getOpioidFlag() &amp;&amp; null!=workItem2 &amp;&amp; null!=workItem2.getLineItemId() &amp;&amp; </td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">335</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt;End Sonar Fixes : Date '26-08-2015' Code fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">316</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt;End Sonar Fixes : Date '26-08-2015' Code fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">336</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2.getTx().getRx().getId().equals(txRecord.getRx().getId()))</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">317</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2.getTx().getRx().getId().equals(txRecord.getRx().getId()))<span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">337</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">318</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">338</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">319</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">339</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Start- Defect Id-6279</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">320</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //Start- Defect Id-6279</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">340</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null!=workItem2.getTx().getRx().getRxScheduleList())</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">321</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null!=workItem2.getTx().getRx().getRxScheduleList())</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">341</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">322</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">342</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //End- Defect Id-6279</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">323</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //End- Defect Id-6279</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">398</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch(IllegalStateException e)</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">379</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch(IllegalStateException e)</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">399</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">380</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">400</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; isTxSet=false;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">381</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; isTxSet=false;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">401</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">382</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">402</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(isTxSet)</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">383</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(isTxSet)</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">403</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">384</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">404</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ttSigDiff">&nbsp;&nbsp;&nbsp;</span><span class="ttSigDiff"> </span>&nbsp;&nbsp; if(null!=changeItemContextSeed){</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">385</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ttSigDiff">&nbsp;&nbsp;&nbsp; </span>&nbsp;&nbsp; if(null!=changeItemContextSeed){</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">405</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">386</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">406</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null!=workItem2.getLineItemId() &amp;&amp; null!=workItem2.getTx() &amp;&amp; workItem2.getTx().getRx().getId().equals(changeItemContextSeed.getTxrecord().getRx().getId())){</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">387</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(null!=workItem2.getLineItemId() &amp;&amp; null!=workItem2.getTx() &amp;&amp; workItem2.getTx().getRx().getId().equals(changeItemContextSeed.getTxrecord().getRx().getId())){</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">407</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem = changeItemContextSeed.getWorkItem();</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">388</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem = changeItemContextSeed.getWorkItem();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">408</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">389</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">409</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">390</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">410</td>
+<td class="Normal">//End fix&nbsp; 4478 06-11-2014 by tcs </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">391</td>
+<td class="Normal">//End fix&nbsp; 4478 06-11-2014 by tcs </td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">411</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else{</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">392</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else{</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">420</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WorkItemData workItemData = (WorkItemData) workItem.getBean();</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">401</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; WorkItemData workItemData = (WorkItemData) workItem.getBean();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">421</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">402</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">422</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">403</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">423</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; final DateFormat formatter = new SimpleDateFormat(&quot;MM/dd/yyyy&quot;);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">404</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; final DateFormat formatter = new SimpleDateFormat(&quot;MM/dd/yyyy&quot;);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">424</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String serviceDate = formatter.format(workItem</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">405</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String serviceDate = formatter.format(workItem</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">425</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getTx().getServiceDate());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">406</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getTx().getServiceDate());</td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">426</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBu<span class="ttSigDiff">i</span><span class="ttSigDiff">ld</span>er warning = new StringBu<span class="ttSigDiff">i</span><span class="ttSigDiff">ld</span>er();<span class="ttSigDiff">//Sonar Fix S1149 on 15 Feb 17 by TCS</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">407</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBu<span class="ttSigDiff">ff</span>er warning = new StringBu<span class="ttSigDiff">ff</span>er();</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">427</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date currentDate = new Date();</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">408</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date currentDate = new Date();</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">428</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">409</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">429</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*if(null!=workItemData.getWarning() &amp;&amp; !workItemData.getWarning().isEmpty())</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">410</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /*if(null!=workItemData.getWarning() &amp;&amp; !workItemData.getWarning().isEmpty())</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">430</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">411</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">431</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warning.append(workItemData.getWarning());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">412</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warning.append(workItemData.getWarning());</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">432</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }*/</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">413</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }*/</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">576</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBuffer oldWarningBuffer = getCommaSeparatedStringFromList(oldWarningList1);</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">557</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBuffer oldWarningBuffer = getCommaSeparatedStringFromList(oldWarningList1);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">577</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">558</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">578</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItemData.setWarning(oldWarningBuffer.toString());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">559</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItemData.setWarning(oldWarningBuffer.toString());</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">579</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">560</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">580</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">561</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">581</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start Defect ID '4213' Date '16-10-2014' Code Fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">562</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; Start Defect ID '4213' Date '16-10-2014' Code Fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">582</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // CI # 2 defect # 5539 dated 05/31/2016 fixed by TCS start (Added is isDrugChanged check)</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">583</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if( !(oldWarnings1.contains(RxConstant.WARNING_NOT_DSP)) <span class="ttSigDiff">&amp;&amp; isDrugChanged</span>){</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">563</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if( !(oldWarnings1.contains(RxConstant.WARNING_NOT_DSP)) ){</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">584</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // CI # 2 defect # 5539 dated 05/31/2016 fixed by TCS end</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">585</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warning.append(COMMA_STRING+ RxConstant.WARNING_NOT_DSP + COMMA_STRING);</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">564</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; warning.append(COMMA_STRING+ RxConstant.WARNING_NOT_DSP + COMMA_STRING);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">586</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">565</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">587</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect ID '4213' Date '16-10-2014' Code Fix by 'TCS' &gt;&gt;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">566</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // &lt;&lt; End Defect ID '4213' Date '16-10-2014' Code Fix by 'TCS' &gt;&gt;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">588</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">567</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">589</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (workItem.getTx().getDrugUpc()!=null &amp;&amp; workItem.getTx().getDrugUpc()</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">568</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (workItem.getTx().getDrugUpc()!=null &amp;&amp; workItem.getTx().getDrugUpc()</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">590</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getMmsFlag().equals(&quot;ON&quot;)</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">569</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .getMmsFlag().equals(&quot;ON&quot;)</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">703</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String[] warningToBeSetArray =warningToBeSet.split(COMMA_STRING);</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">682</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String[] warningToBeSetArray =warningToBeSet.split(COMMA_STRING);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">704</td>
+<td class="Normal">// END FIX 3338 BY TCS 27-10-2014</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">683</td>
+<td class="Normal">// END FIX 3338 BY TCS 27-10-2014</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">705</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String[] oldWarningsArray = oldWarnings.split(COMMA_STRING);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">684</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String[] oldWarningsArray = oldWarnings.split(COMMA_STRING);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">706</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String[] unionArray =this.unionArrays(warningToBeSetArray, oldWarningsArray);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">685</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String[] unionArray =this.unionArrays(warningToBeSetArray, oldWarningsArray);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">707</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">686</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">708</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">687</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secAll">
+<td class="LineNum">709</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBu<span class="ttSigDiff">i</span><span class="ttSigDiff">ld</span>er unionOfWarnings = new StringBu<span class="ttSigDiff">i</span><span class="ttSigDiff">ld</span>er();<span class="ttSigDiff">//Sonar Fix S1149 on 15 Feb 17 by TCS</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">688</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; StringBu<span class="ttSigDiff">ff</span>er unionOfWarnings = new StringBu<span class="ttSigDiff">ff</span>er();</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">710</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; boolean first = true;</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">689</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; boolean first = true;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">711</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(String string : unionArray) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">690</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; for(String string : unionArray) {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">712</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(first) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">691</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(first) {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">713</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unionOfWarnings.append(string);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">692</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; unionOfWarnings.append(string);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">714</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; first=false;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">693</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; first=false;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">715</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">694</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {</td>
+</tr>
+<tr class="secGap"><td colspan="5">&nbsp;</td></tr>
+<tr class="secBegin">
+<td class="LineNum">736</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(workItemData.getDaysSupply()!=txRecord.getDaysSupply()){</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">715</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if(workItemData.getDaysSupply()!=txRecord.getDaysSupply()){</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">737</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItemData.setDaysSupply((long) txRecord.getDaysSupply());</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">716</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItemData.setDaysSupply((long) txRecord.getDaysSupply());</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">738</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">717</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">739</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2=workItem;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">718</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem2=workItem;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">740</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem=null;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">719</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; workItem=null;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">741</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">720</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">721</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">742</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<span class="ttSigDiff"> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">722</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">743</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">723</td>
+<td class="HasMismatch">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp<span class="ttSigDiff"> </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">744</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">724</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">745</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">725</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">746</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">726</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">747</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">727</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">748</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch (HwBaseAppException e) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">728</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; catch (HwBaseAppException e) {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">749</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LOGGER.logError(e.getMessage(),e);</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">729</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LOGGER.logError(e.getMessage(),e);</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">750</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">730</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">751</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">731</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">752</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">732</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">753</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // CI # 2 defect # 5539 dated 05/31/2016 fixed by TCS start</span></td>
+<td class="AlignCenter">&lt;&gt;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">754</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void setDrugChanged(boolean isDrugChanged) {</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">755</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.isDrugChanged = isDrugChanged;</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">756</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">757</td>
+<td class="HasOrphan"><span class="ttSigDiff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // CI # 2 defect # 5539 dated 05/31/2016 fixed by TCS end</span></td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasOrphan">&nbsp;</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">758</td>
+<td class="HasSimilar">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">&nbsp;</td>
+<td class="HasSimilar">&nbsp;</td>
+</tr>
+<tr class="secBegin">
+<td class="LineNum">759</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void saveContextSeed(</td>
+<td class="AlignCenter">=</td>
+<td class="LineNum">733</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; public void saveContextSeed(</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">760</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RxIntakeChangeItemContextSeed rxintakeChangeItemContextSeed) {</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">734</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; RxIntakeChangeItemContextSeed rxintakeChangeItemContextSeed) {</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">761</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; changeItemContextSeed = rxintakeChangeItemContextSeed;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">735</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; changeItemContextSeed = rxintakeChangeItemContextSeed;</td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">762</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">736</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+</tr>
+<tr class="secMiddle">
+<td class="LineNum">763</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">737</td>
+<td class="Normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }</td>
+</tr>
+<tr class="secEnd">
+<td class="LineNum">764</td>
+<td class="Normal">&nbsp;</td>
+<td class="AlignCenter">&nbsp;</td>
+<td class="LineNum">738</td>
+<td class="Normal">&nbsp;</td>
+</tr>
+</table>
+</body></html>

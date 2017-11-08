@@ -1,0 +1,18 @@
+
+line # 512 (17.1) -------------- both sides are technically same.		
+
+line # 875 (17.1) ------- conflict at below condition
+if("Y".equalsIgnoreCase(transferRecord.getAutoFaxFlag()) || "true".equalsIgnoreCase(transferRecord.getAutoFaxFlag()))
+both sides are technically same.
+
+line # 900 (17.1) --------- commented lines conflict only.
+
+line # 915 (17.1) --------- both sides technically same code.
+
+line # 1712 (17.1) -------- both sides technically same code.
+
+line # 1806 (17.1) -------- new methods added on both sides in the last showed conflict.. functions taken from 16.2 file as well.. (functions "setTransferFieldsFromQueueIfPreviousCancel", "enabledDisabled").
+
+
+
+
