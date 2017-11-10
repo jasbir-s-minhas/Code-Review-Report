@@ -58,16 +58,27 @@ public class Main {
             "</div></a>";
 
     public static void main(String[] args) {
-        // write your code here
-        displayIt(new File("./data"));
+
+        if (args.length == 0){
+            LOGGER.info("\nExecution syntax:\n\t" +
+                    "java -jar <path to code review report jar>/CodeReviewReport.jar " +
+                    "<list of root directories containing code merge reports separated by spaces.>\n");
+            return;
+        }
+
+        for (String arg: args){
+            LOGGER.info("Processing report directory: " + arg + ".....");
+            // write your code here
+            processReports(new File(arg));
+        }
     }
 
-    private static void displayIt(File node) {
+    private static void processReports(File node) {
         if (node.isDirectory()) {
             LOGGER.info("Processing Directory : " + node.getAbsoluteFile());
             String[] subNote = node.list();
             for (String filename : subNote) {
-                displayIt(new File(node, filename));
+                processReports(new File(node, filename));
             }
         } else {
             String fileName = node.getAbsoluteFile().toString();
@@ -129,8 +140,6 @@ public class Main {
     }
 
     private static String insertLineComments(String strFromHtmlFile, String strFromTextFile) {
-        LOGGER.info("Executing insertLineComments:");
-        LOGGER.info(strFromTextFile);
         Matcher m = Pattern.compile(cmtLnNumRegEx).matcher(strFromTextFile);
         while (m.find()) {
             String lineNum = m.group(1);
