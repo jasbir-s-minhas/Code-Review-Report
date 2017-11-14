@@ -19,7 +19,7 @@ public class MainTest {
     public void main() throws Exception {
         assertEquals(2, 1 + 1);
         System.out.println("main");
-        String[] args = {"./target/test-classes/report-dir-1"};
+        String[] args = {"./target/test-classes"};
         Main.main(args);
     }
 }

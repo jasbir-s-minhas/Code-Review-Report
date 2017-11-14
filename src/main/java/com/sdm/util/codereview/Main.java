@@ -18,8 +18,8 @@ public class Main {
     private static final Logger LOGGER = Logger.getLogger(Math.class.getName());
 
     private static final String regEx = "([\\s\\S]*)(</style>[\\s\\S]*)(<table[\\s\\S]*)";
-//    private static final String cmtLnNumRegEx = "\\s*\\{\\s*line\\s*:\\s*(\\d+)([LR])\\}\\s-\\s(.*)";
-    private static final String cmtLnNumRegEx = "<\\s*\\{\\s*line\\s*:\\s*(\\d+)([LR])\\}\\s-\\s(.*)";
+    private static final String cmtLnNumRegEx = "\\s*\\{\\s*line\\s*:\\s*(\\d+)([LR])\\}\\s-\\s(.*)";
+//    private static final String cmtLnNumRegEx = "<\\s*\\{\\s*line\\s*:\\s*(\\d+)([LR])\\}\\s-\\s(.*)";
     private static final Pattern cmtLnNumRegExPattern = Pattern.compile(cmtLnNumRegEx);
     private static final String cmtLnNumSub = "<a href=\"#Line$1$2\">Line#:$1$2</a> -> $3 <br />";
 
