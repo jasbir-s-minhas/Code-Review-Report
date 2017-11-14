@@ -4,11 +4,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class MainTest {
     @Before
@@ -23,7 +19,7 @@ public class MainTest {
     public void main() throws Exception {
         assertEquals(2, 1 + 1);
         System.out.println("main");
-        String[] args = {"."};
+        String[] args = {"./target/test-classes/report-dir-1"};
         Main.main(args);
     }
 }
