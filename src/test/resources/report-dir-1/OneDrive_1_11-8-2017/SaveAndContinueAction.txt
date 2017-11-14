@@ -1,0 +1,22 @@
+23-taken 17.1
+63-taken 17.1 - new variable added.
+101 - space conflict
+152 - defect # 15154 (old) fixed in CI-3 HF - taken in 17.1
+161 - space conflict
+185 - if condition modified to avoid NPE - taken 17.1
+190 - sonar fix - taken 17.1
+238 - space conflict
+286 - NPE fix, 24932 fixed - taken 17.1
+321 - 23365 fixed - taken 17.1
+336 - space conflict
+
+404 - space conflict
+426 - sonar fix - taken 17.1
+582 - 5539 (old) fixed in CI-2 - taken in 17.1
+709 - sonar fix - taken 17.1
+742 - space conflict
+753 - 5539 (old) fixed in CI-2 - taken in 17.1
+
+
+over all 17.1 taken
+

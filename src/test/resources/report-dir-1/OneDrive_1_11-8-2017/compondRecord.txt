@@ -1,0 +1,1 @@
+taken code from 16.2 as new function "getAllIngredients" added

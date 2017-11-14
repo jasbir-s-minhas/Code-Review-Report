@@ -1,7 +1,0 @@
-line # 631 ------- formatting done for function "getCompundIngredientsDetails"...
-
-in the above function  ".scale(" value 2 has been changed to 4 to fix "code commit to show on compound ingredient on history and PV screen till 4 precision"
-
-in the last of the file new method added in 17.1 named "setBatchRecordData"
-
-

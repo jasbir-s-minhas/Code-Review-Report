@@ -1,0 +1,3 @@
+taken 17.1 left side of code as it is fixing sonar.
+other conflicts are just space conflicts.
+

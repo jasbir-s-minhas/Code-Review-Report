@@ -1,4 +1,0 @@
-line # 3454(17.1) new condition added in if as below
-null != testTxRecord.getId()
-taken in merge
-

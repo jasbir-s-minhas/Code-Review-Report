@@ -1,2 +1,0 @@
-conflicts only due to commented lines
-taken 17.1 code

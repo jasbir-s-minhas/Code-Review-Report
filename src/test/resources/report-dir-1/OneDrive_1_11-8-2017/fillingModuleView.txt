@@ -1,0 +1,7 @@
+line # 560(17.1 side)----------- "if(0!= cTabItemIndex){" condition added to fix "Patient screen opening while opening compound searchdialog" in 16.3.3_STHotfix branch ----- taken the fix in merge
+
+line # 3435(17.1 side)---------- both sides same
+
+line # 3588 (17.1 side)--------- both sides same
+
+
