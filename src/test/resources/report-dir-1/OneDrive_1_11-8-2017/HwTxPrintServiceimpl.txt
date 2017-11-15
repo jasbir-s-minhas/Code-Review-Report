@@ -1,6 +1,13 @@
 
-{line:380L} - Description of the changes made to line number 380.....
-{line:1980L} - Description of the changes made to line number 1980.....
-{line:4980L} - Description of the changes made to line number 4980.....
-{line:5018L} - Description of the changes made to line number 5018....
-{line:7928L} - Description of the changes made to line number 7928....
+<p>{line:380L} Description of the changes made to line number 380</p>
+<p>{line:1980L} Description of the changes made to line number 1980</p>
+<p>{line:4980L} This line is changed for the following reasons:
+    <ul>
+        <li> First reason...  </li>
+        <li> Second reason.... some long long very long text. </li>
+    </ul>
+</p>
+<p>{line:5018L} Description of the changes made to line number 5018</p>
+<p>{line:7928L} Description of the changes made to line number 7928</p>
+
+The comments can be wrapped in various HTML tags.

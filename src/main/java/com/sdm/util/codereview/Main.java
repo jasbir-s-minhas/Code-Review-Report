@@ -18,10 +18,10 @@ public class Main {
     private static final Logger LOGGER = Logger.getLogger(Math.class.getName());
 
     private static final String regEx = "([\\s\\S]*)(</style>[\\s\\S]*)(<table[\\s\\S]*)";
-    private static final String cmtLnNumRegEx = "\\s*\\{\\s*line\\s*:\\s*(\\d+)([LR])\\}\\s-\\s(.*)";
-//    private static final String cmtLnNumRegEx = "<\\s*\\{\\s*line\\s*:\\s*(\\d+)([LR])\\}\\s-\\s(.*)";
+    private static final String cmtLnNumRegEx =
+            "<\\s*p\\s*>\\s*\\{\\s*line\\s*:\\s*(\\d+)([LR])\\}([\\s\\S]*?)<\\s*/p\\s*>";
     private static final Pattern cmtLnNumRegExPattern = Pattern.compile(cmtLnNumRegEx);
-    private static final String cmtLnNumSub = "<a href=\"#Line$1$2\">Line#:$1$2</a> -> $3 <br />";
+    private static final String cmtLnNumSub = "<a href=\"#Line$1$2\">Line#:$1$2</a>: $3 <br />";
 
     private static final String commentStyle =
             "\n" +
@@ -34,23 +34,29 @@ public class Main {
                     "    border-bottom: 2px dotted blue;\n" +
                     "}\n" +
                     "\n" +
-                    ".tooltip .tooltiptext {\n" +
+                    "  .tooltip {\n" +
+                    "    position: relative;\n" +
+                    "    display: inline-block;\n" +
+                    "    border-bottom: 1px dotted black;\n" +
+                    "  }\n" +
+                    "  \n" +
+                    "  .tooltip .tooltiptext {\n" +
                     "    visibility: hidden;\n" +
-                    "    width: 120px;\n" +
                     "    background-color: black;\n" +
                     "    color: #fff;\n" +
-                    "    text-align: center;\n" +
+                    "    text-align: left;\n" +
                     "    border-radius: 6px;\n" +
                     "    padding: 5px 0;\n" +
-                    "\n" +
                     "    /* Position the tooltip */\n" +
                     "    position: absolute;\n" +
+                    "    display: block;\n" +
+                    "    min-width:350px;\n" +
                     "    z-index: 1;\n" +
-                    "}\n" +
-                    "\n" +
-                    ".tooltip:hover .tooltiptext {\n" +
+                    "  }\n" +
+                    "  \n" +
+                    "  .tooltip:hover .tooltiptext {\n" +
                     "    visibility: visible;\n" +
-                    "}" +
+                    "  }\n"+
                     "\n";
     private static final String anchorFormatterStr =
             "<a name=\"Line{0}{1}\" >" +
@@ -122,9 +128,7 @@ public class Main {
                     strFromTextFile =
                             strFromTextFile.replaceAll(cmtLnNumRegEx, cmtLnNumSub);
                 }
-                strFromTextFile =
-                        strFromTextFile.replaceAll(System.getProperty("line.separator"), "<br />");
-                devComments.append("<p>" + strFromTextFile + "</p>");
+                devComments.append(strFromTextFile );
             }
 
             devComments.append("<br /><h1><---End of Development Team's comments---></h1><br />");
