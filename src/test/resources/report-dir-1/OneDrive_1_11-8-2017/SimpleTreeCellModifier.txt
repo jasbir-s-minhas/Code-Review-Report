@@ -1,3 +1,0 @@
-taken 17.1 code as code 743, 1100 was removed to fix defect # 6836(old defect id) in CI2 apr, 2016.
-
-at line # 1728 code fixed for defect # 26163 which is common functionality.
