@@ -173,9 +173,24 @@ public class Main {
             Object[] params = new Object[]{lineNum, side, comment};
             String msg = MessageFormat.format(anchorFormatterStr, params);
 
+            StringBuilder fromRegxSB = new StringBuilder();
+            fromRegxSB.append("(");
+            if (side.equalsIgnoreCase("L")) {
+                //if the comment is for the left side
+                fromRegxSB.append("<tr class=\"\\w*\">");
+            } else if (side.equalsIgnoreCase("R")) {
+                //if the comment is for the right side
+                fromRegxSB.append("<td.*</td>");
+            }
+            fromRegxSB.append("[\\s]*<td class=\"LineNum\">)(" + lineNum + ")(</td>)");
+
             strFromHtmlFile = strFromHtmlFile
-                    .replaceAll("([\\s]*<td class=\"LineNum\">)(" + lineNum + ")(</td>[\\s]*)",
+                    .replaceAll(fromRegxSB.toString(),
                             "$1" + msg + "$3");
+
+//            strFromHtmlFile = strFromHtmlFile
+//                    .replaceAll("([\\s]*<td class=\"LineNum\">)(" + lineNum + ")(</td>[\\s]*)",
+//                            "$1" + msg + "$3");
         }
         return strFromHtmlFile;
     }
